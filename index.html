@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <title>Instagram Photo Feed</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <form class="d-flex" role="search">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <!-- boton dropdown  -->
+
+                <div class="dropdown dropleft">
+
+                    <a class="btn btn-secondary dropdown-toggle " href="#" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"> <i class="fa-solid fa-gear"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-start">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy abda Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" id="log-out" href="#">Log out</a></li>
+                    </ul>
+                </div>
+
+                <!-- fin del dropdown -->
+            </form>
+        </div>
+    </nav>
+
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-grid-tab" data-bs-toggle="tab" data-bs-target="#nav-grid"
+                type="button" role="tab" aria-controls="nav-grid" aria-selected="true"><i
+                    class="fa-solid fa-table-cells prymary"></i></button>
+            <button class="nav-link" id="nav-feed-tab" data-bs-toggle="tab" data-bs-target="#nav-feed"
+                type="button" role="tab" aria-controls="nav-feed" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
+        </div>
+    </nav>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade" id="nav-grid" role="tabpanel" aria-labelledby="nav-grid-tab" tabindex="0">
+            <div class="container-fluid p-2">
+                <div class="row  my-2">
+                    <div class="col"><img src="https://picsum.photos/200/300?random=1" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                    <div class="col"><img src="https://picsum.photos/200/300?random=2" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                    <div class="col"><img src="https://picsum.photos/200/300?random=3" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                </div>
+                <div class="row  my-2">
+                    <div class="col"><img src="https://picsum.photos/200/300?random=4" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                    <div class="col"><img src="https://picsum.photos/200/300?random=5" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                    <div class="col"><img src="https://picsum.photos/200/300?random=6" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                </div>
+                <div class="row  my-2">
+                    <div class="col"><img src="https://picsum.photos/200/300?random=7" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                    <div class="col"><img src="https://picsum.photos/200/300?random=8" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                    <div class="col"><img src="https://picsum.photos/200/300?random=9" alt="" class="w-100 object-fit-cover-contain" height="400px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-feed" role="tabpanel" aria-labelledby="nav-feed-tab" tabindex="0">
+            <div class="container-fluid d-grid gap-2 col-6 mx-auto m-3" >
+                <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Play of NBA
+                        </div>
+                        <div class="col text-end">
+                            11/05/25
+                        </div>
+                    </div>
+                </div>
+                <img src="https://www.ole.com.ar/images/2025/05/05/qobc_p4hl_720x0__1.jpg" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text"><strong>2.450 likes</strong></p>
+                    <p class="card-text">Eliminatorias 2025 </p>
+                    <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ducimus accusamus quaerat! Ex facere assumenda
+                         beatae odio distinctio, repudiandae necessitatibus tempora aperiam voluptate maiores dicta consequatur dolores laborum in recusandae!</p>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid d-grid gap-2 col-6 mx-auto m-3" >
+                <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Fall
+                        </div>
+                        <div class="col text-end">
+                            11/04/22
+                        </div>
+                    </div>
+                </div>
+                <img src="https://picsum.photos/200/300?random=2" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text"><strong>9999 likes</strong></p>
+                    <p class="card-text">I just wanted to share some fall views with you today!</p>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid d-grid gap-2 col-6 mx-auto m-3" >
+                <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col">
+                            Fall
+                        </div>
+                        <div class="col text-end">
+                            11/04/22
+                        </div>
+                    </div>
+                </div>
+                <img src="https://picsum.photos/200/300?random=3" class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text"><strong>9999 likes</strong></p>
+                    <p class="card-text">I just wanted to share some fall views with you today!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="tab-content" id="nav-tabContent">
+  
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+    GRID
+  </div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+    FEED
+  </div>
+  
+</div> -->
+    <!-- <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <i class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></i>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content container d-flex justify-content-center" id="pills-tabContent">
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-center m-2 align-items-center">
+                    <div class="col-sm-4">1</div>
+                    <div class="col-sm-4">2</div>
+                    <div class="col-sm-4">3</div>
+                </div>
+                <div class="row justify-content-center m-2 align-items-center">
+                    <div class="col-sm-4">4</div>
+                    <div class="col-sm-4">5</div>
+                    <div class="col-sm-4">6</div>
+                </div>
+                <div class="row justify-content-center m-2 align-items-center">
+                    <div class="col-sm-4">7</div>
+                    <div class="col-sm-4">8</div>
+                    <div class="col-sm-4">9</div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            Feed
+        </div>
+      </div> -->
+
+    <script src="https://kit.fontawesome.com/2ac16dd054.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Caption:</label>
+                            <textarea class="form-control" id="message-text"
+                                placeholder="Add the Caption of your post here"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="fa-solid fa-camera"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
